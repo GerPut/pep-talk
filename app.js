@@ -7,15 +7,13 @@ const one = document.getElementById("one")
 const two = document.getElementById("two")
 const three = document.getElementById("three")
 const four = document.getElementById("four")
-
+const sentence = document.getElementById("writing")
 
 const button = document.getElementById("button")
 button.addEventListener("click", getRandomP)
 
+
 function getRandomP() {
-    return one.innerHTML = first[Math.floor(Math.random() * first.length)],
-        two.innerHTML = second[Math.floor(Math.random() * first.length)],
-        three.innerHTML = third[Math.floor(Math.random() * first.length)],
-        four.innerHTML = fourth[Math.floor(Math.random() * first.length)]
+    return sentence.innerHTML = `${first[Math.floor(Math.random() * first.length)]} ${second[Math.floor(Math.random() * second.length)]} ${third[Math.floor(Math.random() * third.length)]} ${fourth[Math.floor(Math.random() * fourth.length)]}`
 }
 
